@@ -25,7 +25,7 @@ import org.hibernate.annotations.SQLDelete;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "role", discriminatorType = DiscriminatorType.STRING)
 @SQLDelete(sql = "UPDATE employees SET deleted = true WHERE id = ? AND version = ?")
-public abstract class Employee extends BaseEntity {
+public class Employee extends BaseEntity {
     private String name;
     private double salary;
 }
