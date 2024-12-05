@@ -1,8 +1,16 @@
 package com.mgmetehan.hibernate_exercises.dto;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@SuperBuilder
 public class DeveloperDTO extends EmployeeDTO {
     private String programmingLanguage;
 }

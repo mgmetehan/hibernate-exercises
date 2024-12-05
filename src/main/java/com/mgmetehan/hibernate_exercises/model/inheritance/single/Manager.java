@@ -16,7 +16,7 @@ import org.hibernate.annotations.SQLDelete;
 @SuperBuilder
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name = "managers")
+//@Table(name = "managers")
 @Entity
 @DiscriminatorValue("MANAGER")
 @SQLDelete(sql = "UPDATE managers SET deleted = true WHERE id = ? AND version = ?")
